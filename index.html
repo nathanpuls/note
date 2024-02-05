@@ -17,7 +17,7 @@
 </head>
 <body>
     <br>
-    <a href="/" class="logo">
+    <a href="https://linksaw.com" class="logo">
         Linksaw
     </a>
     <p class="bold">NOTE</p>
@@ -85,7 +85,7 @@ if (title&&content) {
                     writeData.content);
                     document.getElementById("title").value = "";
                     document.getElementById("content").value = "";
-                    window.location.href = '/note/get.html?title=' + writeData.title;
+                    window.location.href = '/get.html?title=' + writeData.title;
                 })
                 .catch((error) => {
                     console.error('Error saving data:', error);
@@ -100,7 +100,7 @@ if (title&&content) {
             // Validate if the input is not empty
             if (pathValue.trim() !== '') {
                 // Redirect to the page with the 'path' parameter
-                window.location.href = '/note/get.html?title=' + encodeURIComponent(pathValue);
+                window.location.href = '/get.html?title=' + encodeURIComponent(pathValue);
                 
             } 
         }
